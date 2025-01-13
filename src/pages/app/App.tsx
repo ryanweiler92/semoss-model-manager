@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="min-h-screen flex">
       <Sidebar />
-      <div className="flex-1 flex flex-col items-center p-4">
+      <div className="flex-1 flex flex-col items-center p-4 ml-64">
         <header className="text-center">
           <h1 className="text-4xl font-bold mb-2">
             SEMOSS Remote Model Manager
