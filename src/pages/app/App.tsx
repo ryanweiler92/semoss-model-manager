@@ -31,7 +31,9 @@ function App() {
       <Sidebar />
       <div className="flex-1 flex flex-col items-center p-4">
         <header className="text-center">
-          <h1 className="text-4xl font-bold mb-2">Welcome to My App</h1>
+          <h1 className="text-4xl font-bold mb-2">
+            SEMOSS Remote Model Manager
+          </h1>
         </header>
       </div>
     </div>
