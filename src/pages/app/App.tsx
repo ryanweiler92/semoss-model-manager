@@ -2,10 +2,12 @@ import "../../index.css";
 import { useInsight } from "@semoss/sdk-react";
 import useFetchUserData from "../../hooks/useFetchUserData";
 import Sidebar from "../../components/containers/Sidebar";
+import ActiveModels from "../../components/models/activeModels";
+import WarmingModels from "../../components/models/warmingModels";
+import AvailableModels from "../../components/models/availableModels";
 
 function App() {
   const { isAuthorized } = useInsight();
-  useFetchUserData();
 
   const authMessage = isAuthorized
     ? "User is authorized!"
@@ -35,6 +37,9 @@ function App() {
             SEMOSS Remote Model Manager
           </h1>
         </header>
+        <AvailableModels />
+        <ActiveModels />
+        <WarmingModels />
       </div>
     </div>
   );
